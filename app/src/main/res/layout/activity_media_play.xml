@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MediaPlayActivity"
+    android:background="@android:color/black"
+    android:id="@+id/frameBase">
+
+    <ImageView
+        android:id="@+id/imgMediaPlay"
+        android:src="@drawable/default_spinner_animation"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <VideoView
+        android:layout_gravity="center"
+        android:id="@+id/videoMediaPlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <WebView
+        android:id="@+id/webView"
+        android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</FrameLayout>

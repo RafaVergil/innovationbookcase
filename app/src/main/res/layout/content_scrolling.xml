@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".BookDetailsActivity"
+    tools:showIn="@layout/activity_book_details">
+
+    <LinearLayout
+        android:padding="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="2"
+                android:src="@drawable/ic_book"
+                android:id="@+id/imgPortrait"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtTitle"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="2"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:text="Title of the Book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtSubtitle"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="2"
+                    android:textSize="16sp"
+                    android:text="The Cool Subtitle of the Book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtAuthors"
+                    android:layout_marginTop="3dp"
+                    android:maxLines="1"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="BOOK, Author"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtCategories"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:text="Fantasy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtPublisher"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:text="Publisher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:text="@string/publish_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtDate"
+                    android:layout_marginTop="3dp"
+                    android:textSize="14sp"
+                    android:text="01/01/1990"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:text="@string/book_description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtDescription"
+            android:layout_marginTop="3dp"
+            android:textSize="14sp"
+            android:text="@string/large_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnMoreInfo"
+            android:layout_marginTop="15dp"
+            android:text="@string/click_here_more_info"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/btnPreview"
+            android:layout_marginTop="5dp"
+            android:text="@string/preview"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
